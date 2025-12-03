@@ -526,17 +526,17 @@ const Hero = () => {
     },
     {
       type: 'image',
-      src: "https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&q=90&w=2600",
-      category: "MODERN FURNISHINGS",
-      title: "Contemporary home textiles that elevate your living spaces with style.",
-      buttonText: "EXPLORE MORE"
+      src: "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&q=90&w=2600",
+      category: "HANDWOVEN CARPETS",
+      title: "Exquisite carpets that bring warmth and artistry to your floors.",
+      buttonText: "VIEW COLLECTION"
     },
     {
       type: 'image',
-      src: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=90&w=2600",
-      category: "DESIGNER THROWS",
-      title: "Luxurious throws and blankets that add warmth and elegance to any room.",
-      buttonText: "DISCOVER COLLECTION"
+      src: "https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&q=90&w=2600",
+      category: "ELEGANT TABLE LINEN",
+      title: "Set the perfect table with our collection of fine linens and runners.",
+      buttonText: "SHOP NOW"
     }
   ];
 
@@ -717,7 +717,7 @@ const CategoryPage = ({ category, onBack }: { category: string; onBack: () => vo
   ];
 
   return (
-    <div className="w-full min-h-screen bg-white pt-32 pb-20 px-6 md:px-12 animate-fadeIn">
+    <div className="w-full min-h-screen bg-white/10 pt-32 pb-20 px-6 md:px-12 animate-fadeIn">
       {/* Header / Breadcrumbs */}
       <div className="max-w-[1600px] mx-auto mb-12">
         <button
@@ -811,7 +811,7 @@ const Collections = ({ onCategoryClick }: { onCategoryClick: (category: string) 
   ];
 
   return (
-    <section id="collections" className="py-20 bg-[#FDFBF7] w-full min-h-screen">
+    <section id="collections" className="py-20 bg-white/0 w-full min-h-screen">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <h2 className="font-redhat font-bold text-3xl md:text-4xl text-[#2c2c2c] mb-12">Discover by Category</h2>
 
@@ -856,7 +856,7 @@ const FeaturedCollection = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#F9F9F9] w-full min-h-screen">
+    <section className="py-20 bg-white/10 w-full min-h-screen">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between mb-12">
           <div className="max-w-xl">
@@ -909,7 +909,7 @@ const FeaturedCollection = () => {
 
 const Spotlight = () => {
   return (
-    <section className="relative h-[85vh] w-full overflow-hidden flex items-center bg-[#F9F8F6]">
+    <section className="relative h-[85vh] w-full overflow-hidden flex items-center bg-white/10">
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&q=80&w=2600"
@@ -949,7 +949,7 @@ const ShopByCategory = () => {
   ];
 
   return (
-    <section id="shop-by-design" className="py-32 bg-white w-full">
+    <section id="shop-by-design" className="py-32 bg-white/10 w-full">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <h2 className="font-redhat font-bold text-3xl md:text-4xl text-[#2c2c2c] text-center mb-16">Shop by Design</h2>
 
@@ -979,7 +979,7 @@ const ReadyMade = () => {
   ];
 
   return (
-    <section className="py-32 bg-white w-full border-t border-gray-100">
+    <section className="py-32 bg-white/10 w-full border-t border-gray-100">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="flex justify-between items-end mb-16 border-b border-[#e5e5e5] pb-6">
           <div>
@@ -1021,7 +1021,7 @@ const Advantage = () => {
   ];
 
   return (
-    <section className="py-32 bg-[#FDFBF7] w-full">
+    <section className="py-32 bg-white/10 w-full">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="text-center mb-20">
           <span className="font-source uppercase tracking-[0.2em] text-[#9f1b3c] text-xs font-bold mb-4 block">Our Ethos</span>
@@ -1047,7 +1047,7 @@ const Advantage = () => {
 // REMOVED COLOR BRICKS: Lightened background to white for seamless flow
 const Services = () => {
   return (
-    <section id="services" className="grid grid-cols-1 lg:grid-cols-2 min-h-[700px] w-full bg-white border-t border-gray-100">
+    <section id="services" className="grid grid-cols-1 lg:grid-cols-2 min-h-[700px] w-full bg-white/10 border-t border-gray-100">
       <div className="relative h-[400px] lg:h-auto">
         <img
           src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=2000"
@@ -1085,7 +1085,7 @@ const Services = () => {
 
 const Heritage = () => {
   return (
-    <section id="our-story" className="py-32 bg-white w-full">
+    <section id="our-story" className="py-32 bg-white/10 w-full">
       <div className="max-w-[1000px] mx-auto px-6 text-center">
         <h2 className="font-redhat font-bold text-4xl md:text-5xl text-[#064770] mb-12">The Arvind Legacy</h2>
         <div className="relative mb-20">
@@ -1132,7 +1132,7 @@ const OurStores = () => {
   ];
 
   return (
-    <section id="stores" className="py-20 bg-[#FDFBF7] w-full min-h-screen">
+    <section id="stores" className="py-20 bg-white/10 w-full min-h-screen">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <h2 className="font-redhat font-bold text-3xl md:text-4xl text-[#2c2c2c] mb-16">Our Stores</h2>
 
@@ -1204,9 +1204,9 @@ const Partner = () => {
   return (
     <section id="partner" className="sticky top-0 relative py-32 w-full flex items-center justify-center bg-[#064770] z-40 min-h-screen">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0 opacity-40">
+      <div className="absolute inset-0 z-0 opacity-50">
         <img
-          src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&q=90&w=2600"
+          src="/kim.png"
           alt="Partner Background"
           className="w-full h-full object-cover"
         />
@@ -1238,7 +1238,7 @@ const NewsletterSection = () => {
   };
 
   return (
-    <section className="py-24 bg-white w-full border-t border-gray-100">
+    <section className="py-24 bg-white/10 w-full border-t border-gray-100">
       <div className="max-w-[600px] mx-auto px-6 text-center">
         <h2 className="font-redhat font-bold text-3xl text-[#2c2c2c] mb-4">Stay Connected</h2>
         <p className="font-source text-gray-500 mb-8 font-light">
@@ -1264,7 +1264,7 @@ const NewsletterSection = () => {
 
 const Footer = () => {
   return (
-    <footer className="sticky top-0 bg-[#1a1a1a] text-white pt-24 pb-12 w-full z-50 min-h-screen">
+    <footer className="sticky top-0 bg-[#9f1b3c] text-white pt-24 pb-12 w-full z-50 min-h-screen">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
           <div className="md:col-span-1">
@@ -1340,19 +1340,38 @@ const App = () => {
       <CartProvider>
         <ToastProvider>
           <style dangerouslySetInnerHTML={{ __html: styles }} />
-          <div className="w-full min-h-screen flex flex-col">
+          <div className="w-full min-h-screen flex flex-col relative">
+            {/* Fixed Background Image for Non-Hero Sections */}
+            <div
+              className="fixed inset-0 z-[-1] pointer-events-none"
+              style={{
+                backgroundImage: "url('/jim.png')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundAttachment: 'fixed'
+              }}
+            />
+
             <Header />
             <main className="flex-grow">
               {currentView === 'home' ? (
                 <>
                   <Hero />
-                  <Collections onCategoryClick={handleCategoryClick} />
-                  <FeaturedCollection />
-                  <OurStores />
+                  <div className="bg-white/10 backdrop-blur-sm">
+                    <Collections onCategoryClick={handleCategoryClick} />
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm">
+                    <FeaturedCollection />
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm">
+                    <OurStores />
+                  </div>
                   <Partner />
                 </>
               ) : (
-                <CategoryPage category={selectedCategory} onBack={handleBackToHome} />
+                <div className="bg-white/10 backdrop-blur-sm">
+                  <CategoryPage category={selectedCategory} onBack={handleBackToHome} />
+                </div>
               )}
             </main>
             <Footer />
